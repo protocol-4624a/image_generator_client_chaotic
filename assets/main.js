@@ -36,3 +36,9 @@ document.getElementById("generation").addEventListener("click", function () {
         });
 });
 alert("Xin chào, đây là OpenFXT Image Generator, dịch vụ tạo ảnh theo yêu cầu sử dụng bất kỳ ngôn ngữ nào, hiện tại giao diện của website chỉ hỗ trợ trên desktop một cách mượt mà, bạn vui lòng sử dụng thiết bị laptop, PC để sử dụng dịch vụ một cách dễ dàng nhất. Dịch vụ này đã public API và source code trên mục API Docs và Github đi kèm, bạn vui lòng tham khảo thêm. Một vấn đề nữa là do hạn chế về kinh phí và nhân lực, dịch vụ sẽ không có uptime 100%, nếu trong quá trình sử dụng dịch vụ xảy ra lỗi, bạn vui lòng đợi và thử lại sau. Cảm ơn bạn đã quan tâm và sử dụng dịch vụ của OpenFXT!")
+document.addEventListener('DOMContentLoaded', function () {
+    fetch('https://script.google.com/macros/s/AKfycbzR19jkkE5B75g7DGMI9PPmJ2erBrY2RjzyPQ8MgWr9v_Aakw4ULLRfxD_Vk7O-UtKP/exec?action=fxtgeneration')
+        .catch(error => {
+            console.error('Error:', error);
+        });
+});
